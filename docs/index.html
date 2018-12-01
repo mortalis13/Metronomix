@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <title>Metronomix</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <div class="main-container">
+      <div class="header">
+        <div class="title">Metronomix</div>
+      </div>
+      
+      <div class="content">
+        <div class="bd-decor"></div>
+        <div class="info">
+          <p>Metronomix is a metronome-like application with a variety of adjustable pieces allowing to construct beat patterns you need.</p>
+          <p>It features a multichannel sequencer grid and sample editor that lets you select an audio sample for each channel and edit its properties.</p>
+          <p>Handy volume control, tempo presets and playback counters are there for comfortable usage of the application.</p>
+        </div>
+        <div class="bd-decor"></div>
+        
+        <div class="main-images">
+          <div class="image-block">
+            <img src="img/main-view.png">
+            <div class="image-desc">Main View</div>
+          </div>
+          <div class="image-block">
+            <img src="img/sound-editor.png">
+            <div class="image-desc">Sound Editor</div>
+          </div>
+        </div>
+        
+        <div class="modules">
+          <div class="main-view">
+            <div class="module-title">Main View:</div>
+            <ul>
+              <li>tempo can be changed with buttons, using tempo presets or by tapping the tempo text. Holding tempo buttons will change tempo faster</li>
+              <li>playback timer shows time from the beginning of the current playback until it's stopped. By clicking it it's possible to continue timer for the next playbacks</li>
+              <li>global timer starts when the first playback starts. Click the timer to reset it</li>
+              <li>loop bar counter shows active bar within the loop</li>
+              <li>global bar counter shows total number of bars played during the current playback</li>
+            </ul>
+          </div>
+          <div class="sound-editor">
+            <div class="module-title">Sound Editor:</div>
+            <ul>
+              <li>the view allows to create bars and change sequence for each bar, as well as time signature and triplet mode</li>
+              <li>the screen shows one bar at a time and allows to navigate between bars with arrows</li>
+              <li>in the navigation section, the upper number tells the current bar number, and the lower one is for total bars</li>
+              <li>copy button copies active bar sequence to the clipboard, the sequence can be pasted with the paste button</li>
+              <li>long pressing the clear button allows to clear all bars</li>
+              <li>add bar button creates a new bar next to the active one and also duplicates its contents</li>
+              <li>long pressing the remove bar button allows to remove all bars</li>
+              <li>presets button open a popup with presets for sequence Patterns and Kits</li>
+              <li>intro bar button allows to set first 1-2 bars as one time bars, so the loop will return to the bar next to the intro bars</li>
+              <li>tempo change button affects the global tempo, not for each bar</li>
+              <li>by swiping the sequencer grid left/right it's possible to navigate the next/previous bar</li>
+              <li>clicking on a channel label opens Sample Editor for that channel</li>
+              <li>in presets popup clicking on a Pattern preset will load it to the active bar, to fully load a pattern replacing active set of bars use Load item in the preset submenu</li>
+            </ul>
+          </div>
+          <div class="sample-editor">
+            <div class="module-title">Sample Editor:</div>
+            <ul>
+              <li>this view allows to change audio sample for the current channel and adjust its properties</li>
+              <li>arrows next to the sample path load adjacent samples in the same folder</li>
+              <li>group property is used to have multiple channels in the same logical group, they will act as one instrument, so the next sequencer cells will stop the previous sound for the channels of the same group (e.g. used for guitar samples on different channels, or for hihat open/close variations)</li>
+              <li>navigation between channels is performed with arrows or swiping left/right on the empty area below the channel properties</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="features">
+          <div class="section-title">Features</div>
+          <ul>
+            <li>configurable tempo using +/- buttons, tempo presets and "tap tempo"</li>
+            <li>configurable visibility of UI elements (like volume control, tempo presets grid)</li>
+            <li>time counters for active playback and total app time</li>
+            <li>beats/bars counters</li>
+            <li>beats visualization</li>
+            <li>audio spectrum visualization during playback</li>
+            <li>sequence editor with 16 step grid</li>
+            <li>buttons for adding/removing/editing bars and navigating between them</li>
+            <li>patterns and audio kits presets</li>
+            <li>configurable time signature and triplet support</li>
+            <li>intro bars option</li>
+            <li>sample editor allowing to select audio file, preview it and switch to previous/next file in the same folder</li>
+            <li>solo/mute channel, adjust sample gain and group</li>
+            <li>support for WAV format 8/16/24 bits, mono and stereo</li>
+            <li>unlimited tempo range</li>
+            <li>unlimited bars number</li>
+            <li>16 steps in sequencer (each cell corresponding to 1/16th note for 4/4 time signature)</li>
+            <li>20 audio channels</li>
+            <li>intro bars</li>
+          </ul>
+        </div>
+        
+        <div class="notes">
+          <div class="section-title">Notes</div>
+          <ul>
+            <li>all sequencer steps correspond to 1/16th notes by default</li>
+            <li>12/8 measure has 1/8th notes for each step</li>
+            <li>in triplet mode, measures x/4 use 1/8th triplet notes for each step, measures x/8 use 1/16th triplet notes</li>
+            <li>if spectrum visualization isn't smooth or affects the audio playback it can be disabled in Settings</li>
+          </ul>
+        </div>
+        
+      </div>
+      <!-- .content -->
+    </div>
+    
+  </body>
+</html>
