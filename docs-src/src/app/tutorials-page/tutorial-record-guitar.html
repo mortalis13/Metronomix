@@ -1,0 +1,62 @@
+
+<div class="tutorial-content">
+  <div class="title"><a routerLink="/tutorials/how_to_record_guitar">How To Record and Export Guitar Riffs Audio with a DAW</a></div>
+
+  <p>In this tutorial I will use the <a href="http://reaper.fm" target="_blank">REAPER</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Digital_audio_workstation" target="_blank">DAW</a> (Digital Audio Workstation) to record an electric guitar and use the resulting WAV audio files with the application.</p>
+  <br>
+
+  <div class="main-steps">
+    <div class="tutorial-step">
+      <div class="step-text"><b>1.</b> In REAPER create a <b>new track (Ctrl+T)</b>, arm it for recording (red button), select audio input (USB connected guitar amplifier in this case) and check the audio signal.</div>
+      <div class="step-images">
+        <a href="assets/img/tutorial_guitar_record/01_new_recording_track.png" class="image-link" target="_blank"><img src="assets/img/tutorial_guitar_record/01_new_recording_track.png"></a>
+      </div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text"><b>2.</b> Record some riffs, the image shows recording of single chords E5, F5, G5, A5 in 120 bpm with internal metronome on, each 1 bar long which corresponds to 2 seconds for each sample.</div>
+      <div class="step-images">
+        <a href="assets/img/tutorial_guitar_record/02_recorded_chords.png" class="image-link" target="_blank"><img src="assets/img/tutorial_guitar_record/02_recorded_chords.png"></a>
+      </div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text"><b>3.</b> Split the recording to items (with cursor at the start/end of each bar press <b>S to split</b>). Remove empty parts and assign names for the rest of items from their <b>properties (F2)</b>. Then select all items by dragging the right mouse button over them.</div>
+      <div class="step-images">
+        <a href="assets/img/tutorial_guitar_record/03_splitted_items.png" class="image-link" target="_blank"><img src="assets/img/tutorial_guitar_record/03_splitted_items.png"></a>
+      </div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text"><b>4.</b> Select menu <b>File &gt; Render</b> and adjust settings to export samples. Click <b>Render</b> and check the output directory.</div>
+      <div class="sublist">
+        <div class="sublist-item"><b>Source:</b> Selected media items</div>
+        <div class="sublist-item"><b>Tail:</b> off</div>
+        <div class="sublist-item"><b>File name:</b> $item</div>
+        <div class="sublist-item"><b>Channels:</b> Mono</div>
+        <div class="sublist-item"><b>Output format:</b> WAV</div>
+        <div class="sublist-item"><b>WAV bit depth:</b> 16 bit PCM</div>
+      </div>
+      <div class="step-images">
+        <a href="assets/img/tutorial_guitar_record/04_render_options.png" class="image-link" target="_blank"><img src="assets/img/tutorial_guitar_record/04_render_options.png"></a>
+      </div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text"><b>7.</b> Copy the exported WAV files to your <b>device storage</b>, open the application and enter the <b>Sound Editor</b> view.</div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text"><b>8.</b> Click on the label of an empty channel, then on the sample selector, navigate to your copied sample and load it with the button at the right. Assign <b>group 1</b> to the channel. Repeat this step for other samples/channels.</div>
+      <div class="step-images">
+        <a href="assets/img/tutorial_guitar_record/05_sample_selector_dialog.png" class="image-link" target="_blank"><div class="image"><img src="assets/img/tutorial_guitar_record/05_sample_selector_dialog.png" width="400"></div></a>
+        <br>
+        <a href="assets/img/tutorial_guitar_record/06_channel_settings.png" class="image-link" target="_blank"><div class="image"><img src="assets/img/tutorial_guitar_record/06_channel_settings.png" width="400"></div></a>
+      </div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text"><b>9.</b> Each new channel belongs to the group 1 so they act as one instrument, any enabled sequencer step stops the previous steps within the same group, so the guitar chords don't interfere.</div>
+      <div class="step-images">
+        <a href="assets/img/tutorial_guitar_record/07_test_sequence.png" class="image-link" target="_blank"><img src="assets/img/tutorial_guitar_record/07_test_sequence.png" width="400"></a>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+  <p>This method can be used to record other live instruments, like bass guitar, piano or to record an audio loop with duration of 1-2 bars, though it will only work if you use the same tempo during the recording and the playback in the application.</p>
+</div>

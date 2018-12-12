@@ -1,0 +1,89 @@
+
+<div class="tutorial-content">
+  <div class="title"><a routerLink="/tutorials/how_to_export_drum_vsti">How To Export Samples from a Virtual DrumKit VST Plugin</a></div>
+
+  <p>This tutorial will use <a href="https://www.toontrack.com/product/ezdrummer-2" target="_blank"><b>EZdrummer</b></a> virtual instrument to show how to get audio samples and use them in the application.</p>
+  <p>The instrument comes as a VSTi plugin supported by many <a href="https://en.wikipedia.org/wiki/Digital_audio_workstation" target="_blank"><b>DAWs</b></a> (Digital Audio Workstation). One of them is <a href="http://reaper.fm" target="_blank"><b>REAPER</b></a> which is used here.</p>
+  <p>So when the <b>EZdrummer</b> is installed the DAW should find the plugin and you'll be able to create an instrument track and use <b>MIDI items</b> or virtual keyboard to play it.</p>
+  <br>
+
+  <div class="main-steps">
+    <div class="steps-title">Here are the steps to follow:</div>
+    
+    <div class="tutorial-step">
+      <div class="step-text"><b>1.</b> In REAPER create a <b>new track (Ctrl+T)</b>, click the <b>FX button</b> and find <i>"EZdrummer"</i> under the <b>VSTi</b> category, add it and wait until it loads.</div>
+      <div class="step-images">
+        <a href="assets/img/tutorial_drum_vsti/01_reaper_track.png" class="image-link" target="_blank"><img src="assets/img/tutorial_drum_vsti/01_reaper_track.png"></a>
+      </div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text"><b>2.</b> Create <b>MIDI items</b>, each for one of the drumkit pieces. For this drag mouse pointer with <b>Ctrl</b> on the track.</div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text"><b>3.</b> Select each item and give it a name in the <b>properties (F2)</b> (e.g. kick, snare, hihat).</div>
+      <div class="step-images">
+        <a href="assets/img/tutorial_drum_vsti/02_item_naming.png" class="image-link" target="_blank"><img src="assets/img/tutorial_drum_vsti/02_item_naming.png"></a>
+      </div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text"><b>4.</b> Double click each item to open <b>MIDI editor</b>, on the left panel with piano keyboard find corresponding keys for your drum pieces, then drag the mouse in the note area to create a MIDI note for that piece. Adjust sample velocity at the bottom area by dragging the vertical bar.</div>
+      <div class="step-images">
+        <a href="assets/img/tutorial_drum_vsti/03_midi_editor.png" class="image-link" target="_blank"><img src="assets/img/tutorial_drum_vsti/03_midi_editor.png"></a>
+      </div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text"><b>5.</b> Close the MIDI editor and select all MIDI items in the main window by dragging over the items with the <b>right mouse button</b>.</div>
+      <div class="step-images">
+        <a href="assets/img/tutorial_drum_vsti/04_selected_items.png" class="image-link" target="_blank"><img src="assets/img/tutorial_drum_vsti/04_selected_items.png"></a>
+      </div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text"><b>6.</b> Select menu <b>File &gt; Render</b> and adjust settings to export samples. Click <b>Render</b> and check the output directory.</div>
+      <div class="sublist">
+        <div class="sublist-item"><b>Source:</b> Selected media items</div>
+        <div class="sublist-item"><b>Tail:</b> off</div>
+        <div class="sublist-item"><b>File name:</b> $item</div>
+        <div class="sublist-item"><b>Channels:</b> Mono</div>
+        <div class="sublist-item"><b>Output format:</b> WAV</div>
+        <div class="sublist-item"><b>WAV bit depth:</b> 16 bit PCM</div>
+      </div>
+      <div class="step-images">
+        <a href="assets/img/tutorial_drum_vsti/05_render_settings.png" class="image-link" target="_blank"><img src="assets/img/tutorial_drum_vsti/05_render_settings.png"></a>
+      </div>
+    </div>
+    <div class="tutorial-step"><div class="step-text"><b>7.</b> Copy the exported WAV files to your <b>device storage</b>, open the application and enter the <b>Sound Editor</b> view. Click the <b>Presets</b> button, <b>Kits</b>, select <i>".Empty Kit"</i>.</div></div>
+    <div class="tutorial-step"><div class="step-text"><b>8.</b> Click on the first label <i>"KD"</i>, then on the sample selector, navigate to your copied sample for Kick and load it with the button at the right. Repeat this step for other channels.</div></div>
+    <div class="tutorial-step"><div class="step-text"><b>9.</b> Check your kit with some sequencer pattern and save it in the <b>Presets</b> menu.</div></div>
+  </div>
+
+  <p>These are the basic steps for sample exporting. You may change audio settings in the EZdrummer plugin window (like kit type, specific instrument sample for each kit piece, change volume in the Mixer tab). Also you can modify exported WAV audio files in the same DAW or in an audio editor software (like <a href="https://www.audacityteam.org" target="_blank"><b>Audacity</b></a>).</p>
+  <br>
+
+  <div class="add-steps">
+    <div class="steps-title">For example, in <b>REAPER</b>, to edit audio before exporting it:</div>
+    <div class="tutorial-step">
+      <div class="step-text">- copy your MIDI items and from the context menu select <b>'Apply track FX to items as new take (mono output)'</b></div>
+      <div class="step-images">
+        <a href="assets/img/tutorial_drum_vsti/06_copied_items_context.png" class="image-link" target="_blank"><img src="assets/img/tutorial_drum_vsti/06_copied_items_context.png"></a>
+      </div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text">- you'll get a new take in the audio format for which you could apply other effects, change volume, etc. independently of other sounds</div>
+      <div class="step-images">
+        <a href="assets/img/tutorial_drum_vsti/07_fx_applied.png" class="image-link" target="_blank"><img src="assets/img/tutorial_drum_vsti/07_fx_applied.png"></a>
+      </div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text">- e.g. to change volume open the item <b>properties (F2)</b> and adjust it with the <b>Volume/pan</b> slider</div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text">- or drag an audio item to a new track and adjust its volume/effects separately</div>
+    </div>
+    <div class="tutorial-step">
+      <div class="step-text">- then just select all such audio items (not MIDI) and Render them the same way as described above</div>
+    </div>
+  </div>
+  
+  <br>
+  <p>The same technique may be used for other virtual instruments, like bass guitar (<b>MODO BASS</b>) or piano (<b>EZkeys</b>, <b>Addictive Keys</b>). See the <a routerLink="/links"><b>Links</b></a> section for more information.</p>
+</div>
