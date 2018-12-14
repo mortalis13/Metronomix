@@ -5,8 +5,9 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
-import * as TUTORIALS from './tutorials-page/tutorials-page.component';
 import { LinksPageComponent } from './links-page/links-page.component';
+import * as TUTORIALS from './tutorials-page/tutorials-page.component';
+import * as MISC from './misc-pages/misc-pages.component';
 
 import { TestComponent } from './tests/test.component';
 
@@ -16,20 +17,19 @@ import { routes } from './routes';
   declarations: [
     AppComponent,
     MainPageComponent,
+    LinksPageComponent,
     TUTORIALS.TutorialsPageComponent,
     TUTORIALS.TutorialExportVstiComponent,
     TUTORIALS.TutorialRecordGuitarComponent,
     TUTORIALS.TutorialRecordAndroidComponent,
+    MISC.PrivacyPolicyPageComponent,
     TestComponent,
-    LinksPageComponent
   ],
   imports: [
     BrowserModule,
-    // RouterModule.forRoot(routes)
     RouterModule.forRoot(routes, {useHash: true})
   ],
-  // providers: [],
-  // providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

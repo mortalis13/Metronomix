@@ -28,7 +28,7 @@ a {
   background: #fff;
   width: 1100px;
   margin: 0px auto;
-  padding: 20px 40px 30px;
+  padding: 20px 40px 20px;
   font-family: Arial, sans-serif;
   /*font-family: Calibri, Arial, sans-serif;*/
   /*font-family: Candara, Arial, sans-serif;*/
@@ -53,6 +53,18 @@ a {
 .header .title a {
   color: #444;
   text-decoration: none;
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 14px;
+}
+.footer .footer-link a {
+  color: #555;
+  text-decoration: none;
+}
+.footer .footer-link a:hover {
+  text-decoration: underline;
 }
 
 
@@ -271,4 +283,10 @@ a {
 .links-content .link-category a:hover {
   text-decoration: underline;
   color: #205369;
+}
+
+.privacy-policy-content .title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
 }

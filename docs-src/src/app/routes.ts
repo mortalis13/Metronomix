@@ -1,7 +1,10 @@
 import { MainPageComponent } from './main-page/main-page.component';
-import * as TUTORIALS from './tutorials-page/tutorials-page.component';
 import { LinksPageComponent } from './links-page/links-page.component';
+import * as TUTORIALS from './tutorials-page/tutorials-page.component';
+import * as MISC from './misc-pages/misc-pages.component';
+
 import { TestComponent } from './tests/test.component';
+
 
 export const routes = [
   {
@@ -32,5 +35,9 @@ export const routes = [
   {
     path: 'links',
     component: LinksPageComponent
+  },
+  {
+    path: 'privacy-policy',
+    component: MISC.PrivacyPolicyPageComponent
   },
 ]
