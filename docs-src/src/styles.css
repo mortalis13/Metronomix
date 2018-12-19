@@ -129,6 +129,7 @@ a {
 }
 .content .main-images .image-block {
   display: inline-block;
+  margin-bottom: 10px;
 }
 .content .main-images .image-block .image-desc {
   text-align: center;
@@ -139,6 +140,7 @@ a {
 .content .main-images img {
   /*height: 700px;*/
   border: 1px solid #bbb;
+  max-width: 100%;
 }
 
 .content .modules,
@@ -224,6 +226,7 @@ a {
 }
 .tutorial-content .tutorial-step .step-images img {
   border: 1px solid #aaa;
+  max-width: 100%;
 }
 .tutorial-content .tutorial-step .step-text {
   padding-left: 20px;
@@ -283,6 +286,10 @@ a {
 .links-content .link-category a:hover {
   text-decoration: underline;
   color: #205369;
+}
+.links-content .link-add-text {
+  color: #555;
+  font-size: 16px;
 }
 
 .privacy-policy-content .title {
