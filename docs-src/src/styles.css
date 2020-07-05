@@ -258,7 +258,7 @@ a {
   text-decoration: none;
 }
 
-.links-content .title {
+.content .title {
   font-size: 20px;
   font-weight: 700;
   margin-top: 10px;
@@ -266,28 +266,28 @@ a {
   color: #555;
   text-decoration: underline;
 }
-.links-content .title a {
+.content .title a {
   color: #555;
 }
-.links-content .link-category {
+.links.content .link-category {
   margin-bottom: 24px;
 }
-.links-content .link-category .category-title {
+.links.content .link-category .category-title {
   margin-bottom: 8px;
   color: #444;
 }
-.links-content .link-category .link {
+.links.content .link-category .link {
   padding-top: 2px;
   padding-bottom: 2px;
 }
-.links-content .link-category a {
+.links.content .link-category a {
   text-decoration: none;
 }
-.links-content .link-category a:hover {
+.links.content .link-category a:hover {
   text-decoration: underline;
   color: #205369;
 }
-.links-content .link-add-text {
+.links.content .link-add-text {
   color: #555;
   font-size: 16px;
 }
