@@ -17,6 +17,6 @@ Sample based drum metronome and sequencer.
 
 ## Screenshots
 
-![Image_1](_img/metronomix-1_2.png)<br>
-![Image_2](_img/metronomix-2_2.png)<br>
+![Image_1](_img/metronomix-1_2.png =320x)<br>
+![Image_2](_img/metronomix-2_2.png =400x)<br>
 ![Image_3](_img/metronomix-3_2.png)
