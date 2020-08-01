@@ -13,7 +13,7 @@ Sample based drum metronome and sequencer.
 
 ## Download
 
-- [**releases**](https://github.com/mortalis13/Metronomix/releases)
+- [**demo releases**](https://github.com/mortalis13/Metronomix/releases)
 
 ## Screenshots
 
