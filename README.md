@@ -2,7 +2,7 @@
 
 ![Icon](_img/icon.png)
 
-Sample based drum metronome and sequencer.
+A drum metronome with a sample-based sequencer.
 
 ## Features
 
@@ -18,6 +18,7 @@ Sample based drum metronome and sequencer.
 
 ## Screenshots
 
-![Main](_img/metronomix-1_3.png)   ![Sequencer](_img/metronomix-2_3.png)<br><br>
-![Presets](_img/metronomix-3_3.png)<br><br>
-![Channel](_img/metronomix-4_3.png)<br><br>
+![Main](_img/metronomix-1_4.png)<br><br>
+![Sequencer](_img/metronomix-2_4.png)<br><br>
+![Presets](_img/metronomix-3_4.png)<br><br>
+![Channel](_img/metronomix-4_4.png)<br><br>
