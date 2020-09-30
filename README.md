@@ -13,11 +13,11 @@ Sample based drum metronome and sequencer.
 
 ## Download
 
-- [Metronomix](https://play.google.com/store/apps/details?id=org.mortalis.metronomix) on **Google Play**
+- [**Metronomix**](https://play.google.com/store/apps/details?id=org.mortalis.metronomix) on **Google Play**
 - [**demo releases**](https://github.com/mortalis13/Metronomix/releases)
 
 ## Screenshots
 
-![Main](_img/metronomix-1_3.png)![Sequencer](_img/metronomix-2_3.png)<br><br>
+![Main](_img/metronomix-1_3.png)   ![Sequencer](_img/metronomix-2_3.png)<br><br>
 ![Presets](_img/metronomix-3_3.png)<br><br>
 ![Channel](_img/metronomix-4_3.png)<br><br>
