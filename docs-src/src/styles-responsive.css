@@ -30,8 +30,18 @@
 @media screen and (max-width: 400px) {
   .menu {
     font-size: 20px;
+    display: flex;
   }
   .menu .menu-item {
-    width: 80px;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .menu {
+    display: block;
+  }
+  .menu .menu-item {
+    width: 100%;
   }
 }
